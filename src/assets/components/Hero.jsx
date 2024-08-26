@@ -19,7 +19,7 @@ const Hero = () => {
             <p className='text-lg text-Grayish-Blue pb-7 lg:text-left'>Take your financial life online. Your Easybank account will be a one-stop-shop 
             for spending, saving,  budgeting, investing, and much more.</p>
             {/* button  */}
-            <a className='text-White mx-auto lg:mx-0 w-fit font-semibold px-5 py-2 rounded-full duration-500 bg-gradient-to-r from-Lime-Green to-Bright-Cyan hover:from-Bright-Cyan hover:to-Grayish-Blue transition-all delay-200 cursor-pointer z-20' href='#'>Request Invite</a>
+            <a className='text-White shadow-md mx-auto lg:mx-0 w-fit font-semibold px-5 py-2 rounded-full duration-500 bg-gradient-to-r from-Lime-Green to-Bright-Cyan hover:from-Bright-Cyan hover:to-Grayish-Blue transition-all delay-200 cursor-pointer' href='/'>Request Invite</a>
         </div>
         {/* desktop screen images  */}
         <div className='lg:col-span-6 none lg:block relative'>

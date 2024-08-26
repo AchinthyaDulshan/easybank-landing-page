@@ -38,7 +38,7 @@ const Facilities = () => {
             <div className='flex flex-wrap'>
                 {facilities.map((facility,index)=>(
                     <div key={index} className='w-full lg:w-1/4 md:w-1/2 p-3'>
-                        <img className='py-10 mx-auto lg:m-0' src={facility.icon} alt={facility.name} />
+                        <img className='py-10 mx-auto lg:m-0 hover:translate-x-3 transition-transform duration-200' src={facility.icon} alt={facility.name} />
                         <h2 className='text-Dark-Blue text-xl pb-5'>{facility.name}</h2>
                         <p className='text-Grayish-Blue'>{facility.description}</p>
                     </div>

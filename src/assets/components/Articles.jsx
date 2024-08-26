@@ -39,7 +39,7 @@ const Articles = () => {
             {/* article cards  */}
             <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-5'>
                 {articles.map((article, index) => (
-                    <div key={index} className='w-full rounded-md bg-White'>
+                    <div key={index} className='w-full rounded-md bg-White shadow-md'>
                         <img className='object-cover h-48 rounded-t-md  w-full' src={article.image} alt={article.heading} />
                         <div className='p-8 lg:p-4 mt-3'>
                             <p className='text-sm text-Grayish-Blue tracking-tighter'>by {article.createdBy}</p>

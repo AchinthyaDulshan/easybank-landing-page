@@ -28,15 +28,15 @@ const Navbar = () => {
             {/* link items */}
             <ul className={`flex md:flex-row md:shadow-none flex-col shadow-lg justify-center items-center md:py-0 py-12 absolute left-0 md:static bg-white md:z-50 lg:z-[10] z-[-1] w-full md:w-auto md:pl-0  transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'} bg-White`}>
                 {
-                    Links.map((link) => (
-                    <li className='md:ml-8 md:my-0 my-3 lg:hover:after:block after:rounded-full after:none after:relative after:h-1 after:w-full after:-bottom-4  after:bg-gradient-to-r after:from-Lime-Green after:to-Bright-Cyan after:transition-all after:duration-200 hover:text-Dark-Blue'>
+                    Links.map((link, index) => (
+                    <li key={index} className='md:ml-8 md:my-0 my-3 lg:hover:after:block after:rounded-full after:none after:relative after:h-1 after:w-full after:-bottom-4  after:bg-gradient-to-r after:from-Lime-Green after:to-Bright-Cyan after:transition-all after:duration-200 hover:text-Dark-Blue'>
                         <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>
                     </li>))
                 }
                 
             </ul>
             {/* button */} 
-            <a className='text-White font-semibold text-sm px-5 py-2 rounded-full duration-500 bg-gradient-to-r from-Lime-Green to-Bright-Cyan hidden md:block hover:from-Bright-Cyan hover:to-Grayish-Blue transition-all delay-200 shadow-lg' href='#'>Request Invite</a>
+            <a className='text-White font-semibold text-sm px-5 py-2 rounded-full duration-500 bg-gradient-to-r from-Lime-Green to-Bright-Cyan hidden md:block hover:from-Bright-Cyan hover:to-Grayish-Blue transition-all delay-200 shadow-lg' href='/'>Request Invite</a>
            </div>
         </div>
     );
